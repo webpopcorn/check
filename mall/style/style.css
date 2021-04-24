@@ -1,0 +1,85 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+
+
+html {scroll-behavior: smooth;/* ie안됨,*/}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0; font-size: 15px; line-height: 1.5em; font-weight: 300;
+}
+/*reset*/
+a { text-decoration: none; color: #222; }
+h1,h2,h3,h4,h5,h6 {margin: 0; font-weight: 500; line-height: 1.2em}
+input, button,textarea { outline: none }
+button { cursor: pointer }
+ul,ol { padding: 0; margin: 0;}
+li { list-style: none }
+/*common css*/
+.inner { width: 1200px; margin: 0 auto; }
+.clearfx::after{content:""; display:block; clear:both}
+
+/* banner  */
+.topBar{
+	background-color: #000; 
+	padding:5px; box-sizing: border-box;
+	text-align: center; color:#eee;
+}
+.topBar>a{ color:goldenrod; }
+
+/* header */
+header{}
+.header_inner{ 
+	position: relative;
+	width: 1200px; margin: 0 auto; 
+;}
+ h1{ width:200px; margin: 30px auto 20px; text-align: center; }
+	header h1 img{width:100%}
+	/* search */
+	.search_area{ 
+		position: absolute; right:0; bottom:1px;  
+		font-size: 0.8em;
+	}
+	.search_area input[type="search"]{padding:4px 10px 2px;}
+	.search_area i{font-size:1.2em}
+
+/* nav */
+nav{ 
+	border-top:1px solid #ddd;border-bottom:1px solid #ddd;
+padding:5px 0 }
+/* left */
+.lt_gnb{float:left;}
+.lt_gnb li{ float:left; margin-right:20px; }
+.lt_gnb a{display:block; font-size:0.8em; color:#000; line-height: 2em; }
+.lt_gnb a:hover{color:tomato; }
+/* right */
+.rt_gnb{ float:right; }
+.rt_gnb li{ float:left; margin-left:10px;}
+.rt_gnb li a{ 
+	display:block; 
+	font-family: 'Raleway', sans-serif;
+	font-size:0.8em; line-height:2em; color:rgb(73, 73, 73); }
+.rt_gnb li a:hover{color:royalblue}
+
+/* -------------------- main ----------------- */
+.main{ 
+	position:relative; height:450px;
+	background:#f1f1f1 url(../img/bg2.png) no-repeat center;
+border: 1px solid #000;
+}
+.main_inner{
+	position:relative;
+	width: 1200px; height:450px; margin: 0 auto;  }
+.main_txtwrap{
+	position: absolute; 
+	left:50%; top:50%; 
+	transform:translate(-50%,-50%);
+	margin-left: 13%;
+}
+
+.slogun2{ font-size:20px; left:510px; top: 130px; animation:title2 1s;}
+.title2{ font-size:100px;  left:510px; top: 202px; animation:title2 1s;transform:translateX(-10px)}
+.main_ex2{ font-size:16px; width:350px; color:#333;  left:510px; top: 270px; animation:main_ex2 2s;}

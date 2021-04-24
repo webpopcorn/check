@@ -19,11 +19,13 @@ button { cursor: pointer }
 ul,ol { padding: 0; margin: 0;}
 li { list-style: none }
 /*common css*/
-.inner { width: 1200px; margin: 0 auto; }
+.inner { width: 1200px; margin: 0 auto;  }
 .clearfx::after{content:""; display:block; clear:both}
 
+#contaniner{ width: 100%; }
 /* banner  */
 .topBar{
+	min-width:1200px;
 	background-color: #000; 
 	padding:5px; box-sizing: border-box;
 	text-align: center; color:#eee;
@@ -31,11 +33,8 @@ li { list-style: none }
 .topBar>a{ color:goldenrod; }
 
 /* header */
-header{}
-.header_inner{ 
-	position: relative;
-	width: 1200px; margin: 0 auto; 
-;}
+header{min-width:1200px;/* 모바일체크 */ }
+.hder_top{ position: relative; }
  h1{ width:200px; margin: 30px auto 20px; text-align: center; }
 	header h1 img{width:100%}
 	/* search */
@@ -45,41 +44,39 @@ header{}
 	}
 	.search_area input[type="search"]{padding:4px 10px 2px;}
 	.search_area i{font-size:1.2em}
-
 /* nav */
-nav{ 
-	border-top:1px solid #ddd;border-bottom:1px solid #ddd;
-padding:5px 0 }
+nav{  
+	padding:5px 0 ;
+	border-top:1px solid #ddd; border-bottom:1px solid #ddd;
+
+
+}
+.nav_inner{ position: relative; }
 /* left */
 .lt_gnb{float:left;}
 .lt_gnb li{ float:left; margin-right:20px; }
-.lt_gnb a{display:block; font-size:0.8em; color:#000; line-height: 2em; }
+.lt_gnb a{display:block; font-size:0.8em; font-weight: bold; color:#000; line-height: 2em; }
 .lt_gnb a:hover{color:tomato; }
 /* right */
 .rt_gnb{ float:right; }
 .rt_gnb li{ float:left; margin-left:10px;}
 .rt_gnb li a{ 
 	display:block; 
-	font-family: 'Raleway', sans-serif;
-	font-size:0.8em; line-height:2em; color:rgb(73, 73, 73); }
+	font-family: 'Raleway', sans-serif; font-weight: bold;
+	font-size:0.8em; line-height:2em; color:rgb(56, 43, 43); }
 .rt_gnb li a:hover{color:royalblue}
 
 /* -------------------- main ----------------- */
 .main{ 
-	position:relative; height:450px;
+	position:relative; min-width:1200px; height:450px;
 	background:#f1f1f1 url(../img/bg2.png) no-repeat center;
-border: 1px solid #000;
 }
-.main_inner{
-	position:relative;
-	width: 1200px; height:450px; margin: 0 auto;  }
 .main_txtwrap{
 	position: absolute; 
 	left:50%; top:50%; 
 	transform:translate(-50%,-50%);
 	margin-left: 13%;
 }
-
 .slogun2{ font-size:20px; left:510px; top: 130px; animation:title2 1s;}
 .title2{ font-size:100px;  left:510px; top: 202px; animation:title2 1s;transform:translateX(-10px)}
 .main_ex2{ font-size:16px; width:350px; color:#333;  left:510px; top: 270px; animation:main_ex2 2s;}
